@@ -151,6 +151,9 @@ function QS:AddEntry(name, icon, code)
 	Icon.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 	Icon.ImageColor3 = Color3.fromRGB(26, 1, 22)
 	Icon.Image = icon
+	if not icon:match("rbxassetid://") then
+	    Icon.ImageColor3 = Color3.fromRGB(255, 255, 255)
+	end
 	Icon.Parent = Window
 
 	local Button = Instance.new("ImageButton")
