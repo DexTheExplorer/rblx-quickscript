@@ -14,7 +14,7 @@ QS:AddEntry('Hello World', 'rbxassetid://6026568210', "print('Hello World!')")
 ```lua
 --[[
   ScriptName : The name of the script. It will show up on the button in-game.
-  ScriptIcon : An image asset. It will show up on the button in-game. Can be either 'rbxassetid://123' or 'get_synasset('image.png')'
+  ScriptIcon : An image asset. It will show up on the button in-game. Can be either 'rbxassetid://123' or 'getsynasset('image.png')'
   ScriptCode : The code that will be ran upon click. This can be a loadstring or plain luau code.
 ]]--
 
