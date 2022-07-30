@@ -35,11 +35,15 @@ QS:AddEntry('Spawn Block', 'rbxassetid://6031630222', "local part = Instance.new
 Congratulations. It should now work accordingly.
 
 # Issues
-QuickScript will **not** tell you if your script encountered an error, unless `_G.DEBUG` is set to **true**.
+## QuickScript will **not** tell you if your script encountered an error, unless `_G.DEBUG` is set to **true**.
 
-Make sure to format your code correctly. **You cannot use multiple `"` in a script without escaping.**
+### Make sure to format your code correctly. **You cannot use multiple `"` in a script without escaping.**
 
 **Solution:** Use `'` inside of scripts instead of `"`.
 ```lua
 QS:AddEntry('Cool Script', 'rbxassetid://1', "loadstring(game:HttpGet('https://raw.githubusercontent.com/DexTheExplorer/rblx-quickscript/main/source.lua'))()")
 ```
+
+### `getsynasset()` images aren't shaded in the right color tone.
+
+This is due to images that don't feature transparency. They will show up as a black square. I chose to disable image tinting on custom loaded assets.
